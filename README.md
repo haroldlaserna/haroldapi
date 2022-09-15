@@ -59,7 +59,7 @@ If you want to see the Driver with the most first places, you have to append
  a dict with your answer.
 
  If you want to see the Name of the most run circuit, you have to append
-  to the URL **/driver/maxfirst**, and you will see a list with
+  to the URL **/circuit/max**, and you will see a list with
   a dict with your answer.
 
  If you want to see the
