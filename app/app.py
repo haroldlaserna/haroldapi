@@ -2,9 +2,11 @@ from fastapi import FastAPI
 import sqlalchemy
 from sqlalchemy import create_engine, MetaData, text, inspect, engine
 import uvicorn
+
 app = FastAPI()
 
-engine = create_engine('sqlite:///racing.db', echo = False)
+engine = create_engine('sqlite:///DataBase/racing.db', echo = False)
+
 conn = engine.connect()
 meta = MetaData(bind=conn)
 MetaData.reflect(meta)
@@ -20,7 +22,7 @@ def create_query(query):
 
 @app.get("/", tags = ["Root"])
 async def hello():
-    return "Hola mundo"
+    return "Welcome To The API of DATA racings"
 @app.get("/table/{tablename}")
 async def select_table(tablename, limit = None, columns = None):
     if limit == None:
