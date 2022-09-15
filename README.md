@@ -10,7 +10,7 @@ The goal of this API is to generate 4 specific queries:
 
 Finally, this API can also generate data from the table you want to choose, also choosing the columns you only need and the amount of data.
 
-The data contained in this repository has been normalized using the **sqlalchemy** package, you can find the normalizations made in and the data ingest made in Python in the **Database_Processing** table. To create the normalization you can use the **create_database.py** file. IT IS **NOT NECESSARY** TO EXECUTE IT, the normalization is already created in the **DataBase** folder.
+The data contained in this repository has been normalized using the **sqlalchemy** package, you can find the normalizations and the data ingest made in Python in the **Database_Processing** table. To create the normalization you can use the **create_database.py** file. IT IS **NOT NECESSARY** TO EXECUTE IT, the normalization is already created in the **DataBase** folder.
 
 THIS API IS CREATED WITH **fastAPI** PACKAGE IN PYTHON.
 ## Create Enviroment
