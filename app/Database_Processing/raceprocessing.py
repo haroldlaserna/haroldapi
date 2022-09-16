@@ -2,10 +2,6 @@ from sqlalchemy import Table, DateTime, Column, Integer, String, Date, text, Flo
 from sqlalchemy import create_engine, MetaData
 from datetime import datetime
 
-engine = create_engine('sqlite:///college.db', echo = False)
-conn = engine.connect()
-meta = MetaData()
-
 class RaceCreator:
     def __init__(self, engine, conn, meta):
         self.engine = engine
